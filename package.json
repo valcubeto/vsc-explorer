@@ -1,0 +1,28 @@
+{
+  "name": "simpleexplorer",
+  "displayName": "Simple Explorer",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./out/extension.js",
+  "categories": ["Other"],
+  "contributes": {
+    "commands": [{
+      "title": "Simple Explorer",
+      "command": "simpleexplorer.view"
+    }]
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/vscode": "^1.100.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "compile": "bunx tsc -p ./",
+    "watch": "bunx tsc -watch -p ./",
+    "vscode:prepublish": "bun run compile"
+  }
+}
