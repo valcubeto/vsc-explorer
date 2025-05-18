@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button>&lt;</button> <h3>Rust project</h3>
+  <!-- Add some indent on each details level  -->
+  <div class="workspace">
+    <details class="folder">
+      <summary draggable="true">src</summary>
+      <details class="folder">
+        <summary draggable="true">module</summary>
+        <p draggable="true">mod.rs</p>
+      </details>
+      <p draggable="true">main.rs</p>
+    </details>
+    <p draggable="true">Cargo.lock</p>
+  </div>
+</body>
+</html>

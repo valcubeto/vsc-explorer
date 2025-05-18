@@ -1,0 +1,16 @@
+html {
+  user-select: none;
+  line-height: 1lh;
+}
+/* Indent with each level */
+.workspace :not(summary) {
+  margin: 0em 0px 0em 1.5em;
+}
+summary {
+  padding: 0.5em;
+  border: 1px solid red;
+}
+p {
+  padding: 0.5em;
+  border: 1px solid blue;
+}
